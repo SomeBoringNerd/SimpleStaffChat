@@ -1,0 +1,28 @@
+name: Simplestaffchat
+version: 1.0
+main: xyz.someboringnerd.simplestaffchat.Simplestaffchat
+api-version: 1.16
+load: STARTUP
+authors: [ SomeBoringNerd ]
+description: A simple plugin to allow staff member to chat privatly
+commands:
+  staffsay:
+    description: Envoie un message dans le chat du staff
+    aliases: [ss]
+    permission: staffchat.say
+    usage: /staffsay <Message>
+  staffchattoggle:
+    description: Passe du chat general ou admin a l'autre
+    aliases: [ sct ]
+    permission: staffchat.toggle
+    usage: /staffchattoggle
+Permissions:
+  staffchat.say:
+    description: Permet l'utilisation de /staffsay
+    default: op
+  staffchat.toggle:
+    description: Permet l'utilisation de /staffchattoggle
+    default: op
+  staffchat.getstaffmsg:
+    description: Permet de recevoir les messages
+    default: op
